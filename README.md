@@ -12,7 +12,7 @@ Please refer to the paper for full methodological details; equations and section
 
 ## Sequence provenance
 
-The 2,034 sequences are **not original to this study** — they are taken from prior work. They comprise:
+The 2,034 sequences are not original to this study. They are taken from prior work. They comprise:
 
 - **1,266 naturally occurring sequences** drawn from the [DISPROT](https://www.disprot.org/) database.
 - **768 abiological sequences** generated during the active-learning campaign of An, Webb & Jacobs (_Sci. Adv._ **2024**, _10_, eadj2448; DOI: [10.1126/sciadv.adj2448](https://doi.org/10.1126/sciadv.adj2448)), which explored the thermodynamics–dynamics trade-off in protein condensates. These span a wide range of sequence characteristics, from highly charged polyampholytes to neutral hydrophobic sequences.
@@ -28,9 +28,9 @@ The condensed-phase diffusivity values reused in this study also originate from 
 | Equation of state $P(\rho)$, phase-separation labels, condensed-phase density $\rho_\mathrm{c}$, expenditure density $\rho^*$, radius of gyration $R_\mathrm{g}$, second virial coefficient $B_2$ | **Newly computed in this study** |
 | Condensed-phase chain self-diffusivity | Sourced from prior work (An, Webb & Jacobs, _Sci. Adv._ 2024) |
 
-The **expenditure density** $\rho^*$ is the central new metric proposed here. Intuitively, it is the density to which a sequence can be reversibly compressed from infinite dilution given a fixed allowance of work. It is defined implicitly by
+The **expenditure density**, $\rho^*$, is the central new metric proposed here. Intuitively, it is the density to which a sequence can be reversibly compressed from infinite dilution given a fixed allowance of work. It is defined implicitly by
 
-$$\hat{w}^{*} = \frac{W^{*}}{m} = \int_{0}^{\rho^{*}} d\rho\,\frac{P(\rho)}{\rho^{2}},$$
+$\hat{w}^{*} = \frac{W^{*}}{m} = \int_{0}^{\rho^{*}} d\rho\,\frac{P(\rho)}{\rho^{2}},$
 
 where $P(\rho)$ is the pressure–density equation of state, $m$ is the system mass, and $\hat{w}^{*}$ is the intensive work allowance, set to $\hat{w}^{*} = 15\ \mathrm{atm\cdot mL\,g^{-1}}$ (chosen to maximize classification accuracy; see the paper's Supporting Information). Higher $\rho^*$ corresponds to greater phase-separation propensity.
 
