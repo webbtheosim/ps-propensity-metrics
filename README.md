@@ -10,7 +10,7 @@ The study evaluates several simple, low-cost computational metrics for quantifyi
 
 Please refer to the paper for full methodological details; equations and section references below point to it.
 
-## Sequence provenance
+## Sequences
 
 The 2,034 sequences are not original to this study. They are taken from prior work. They comprise:
 
@@ -19,7 +19,7 @@ The 2,034 sequences are not original to this study. They are taken from prior wo
 
 The condensed-phase diffusivity values reused in this study also originate from that work.
 
-## What is new in this study
+## New to this study
 
 **All reported metrics were recomputed in this work from coarse-grained MD simulations**, with one exception:
 
@@ -30,9 +30,9 @@ The condensed-phase diffusivity values reused in this study also originate from 
 
 The **expenditure density**, $\rho^*$, is the central new metric proposed here. Intuitively, it is the density to which a sequence can be reversibly compressed from infinite dilution given a fixed allowance of work. It is defined implicitly by
 
-$$\hat{w}^{\*} = \frac{W^{\*}}{m} = \int_{0}^{\rho^{\*}} d\rho\,\frac{P(\rho)}{\rho^{2}},$$
+$$\hat{w}^{\*} = \frac{W^{\*}}{m} = \int_{0}^{\rho^{\*}} d\rho\frac{P(\rho)}{\rho^{2}}$$
 
-where $P(\rho)$ is the pressure–density equation of state, $m$ is the system mass, and $\hat{w}^{\*}$ is the intensive work allowance, set to $\hat{w}^{\*} = 15\ \mathrm{atm\cdot mL\,g^{-1}}$ (chosen to maximize classification accuracy; see the paper's Supporting Information). Higher $\rho^*$ corresponds to greater phase-separation propensity.
+where $P(\rho)$ is the pressure–density equation of state, $m$ is the system mass, and $\hat{w}^{\*}$ is the intensive work allowance, set to $\hat{w}^{\*} = 15\ \mathrm{atm\cdot mL\,g^{-1}}$ (chosen to maximize classification accuracy; see paper SI). Higher $\rho^*$ corresponds to greater phase-separation propensity.
 
 ## Repository contents
 
@@ -56,7 +56,7 @@ Per-sequence labels and computed metric values.
 | --- | --- |
 | `generation` | Sequence origin: `0` = natural DISPROT sequence; `1`–`8` = active-learning generation. |
 | `diff`, `diff_std` | Condensed-phase chain self-diffusivity and its standard deviation (**sourced from prior work**; reported only for phase-separating sequences, ~475 entries). |
-| `psp` | Binary phase-separation label (`1` = phase-separating, `0` = not), from the presence of a negative-pressure loop in the EoS. 479 of 2,034 sequences are labeled phase-separating. |
+| `psp` | Binary phase-separation label (`1` = phase-separating, `0` = not), from the presence of a negative-pressure loop in the EoS. Of 2,034 sequences, 479 are labeled phase-separating. |
 | `exp_density`, `exp_density_err` | Expenditure density $\rho^*$ (g/mL) and standard error. |
 | `density`, `density_err` | Estimated condensed-phase density $\rho_\mathrm{c}$ (g/mL) and standard error (`0.0` for non-phase-separating sequences). |
 | `rg`, `rg_err` | Single-chain radius of gyration (Å) and standard error. |
