@@ -30,9 +30,9 @@ The condensed-phase diffusivity values reused in this study also originate from 
 
 The **expenditure density**, $\rho^*$, is the central new metric proposed here. Intuitively, it is the density to which a sequence can be reversibly compressed from infinite dilution given a fixed allowance of work. It is defined implicitly by
 
-$\hat{w}^{*} = \frac{W^{*}}{m} = \int_{0}^{\rho^{*}} d\rho\,\frac{P(\rho)}{\rho^{2}},$
+$$\hat{w}^{\*} = \frac{W^{\*}}{m} = \int_{0}^{\rho^{\*}} d\rho\,\frac{P(\rho)}{\rho^{2}},$$
 
-where $P(\rho)$ is the pressure–density equation of state, $m$ is the system mass, and $\hat{w}^{*}$ is the intensive work allowance, set to $\hat{w}^{*} = 15\ \mathrm{atm\cdot mL\,g^{-1}}$ (chosen to maximize classification accuracy; see the paper's Supporting Information). Higher $\rho^*$ corresponds to greater phase-separation propensity.
+where $P(\rho)$ is the pressure–density equation of state, $m$ is the system mass, and $\hat{w}^{\*}$ is the intensive work allowance, set to $\hat{w}^{\*} = 15\ \mathrm{atm\cdot mL\,g^{-1}}$ (chosen to maximize classification accuracy; see the paper's Supporting Information). Higher $\rho^*$ corresponds to greater phase-separation propensity.
 
 ## Repository contents
 
