@@ -62,7 +62,7 @@ Per-sequence labels and computed metric values.
 | `rg`, `rg_err` | Single-chain radius of gyration (Å) and standard error. |
 | `b2`, `b2_err` | Second virial coefficient $B_2$ (Å³) and standard error. |
 
-Note: `rg` and `b2` are the **raw (extensive)** values. The paper analyzes the normalized, intensive forms $\tilde{R}_\mathrm{g} = R_\mathrm{g}/R_\mathrm{g}^{\mathrm{id}}$ and $\tilde{B}_2 = B_2/V_0$; the normalization constants are given in the Methods.
+Note: `rg` and `b2` are the **raw (extensive)** values. The paper analyzes the normalized, intensive forms $\tilde{R}\_\mathrm{g} = R\_\mathrm{g}/R\_\mathrm{g}^{\mathrm{id}}$ and $\tilde{B}_2 = B_2/V_0$; the normalization constants are given in the Methods.
 
 ### `data/EOS.csv`
 The approximate equation of state for each sequence: the average pressure $P(\rho)$ (atm) at fixed densities, with standard errors. Column pairs `rho_<d>` / `std_err_<d>` give the pressure and its standard error at density `<d>` g/mL (e.g. `rho_0p05` is the pressure at $\rho = 0.05$ g/mL), for densities 0.05 and 0.1–1.4 g/mL in steps of 0.1. Empty cells indicate densities not sampled for that sequence. A statistically significant negative pressure loop is taken as evidence of phase separation; $\rho^*$ and $\rho_\mathrm{c}$ are derived by integrating a cubic spline through these points.
